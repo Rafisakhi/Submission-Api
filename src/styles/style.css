@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 100%;
+  margin: 32px;
+}
+
+judul-store {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+club-list {
+  display: flex;
+  margin-top: 32px;
+  width: 100%;
+  max-width: 800px;
+  padding: 16px;
+}
