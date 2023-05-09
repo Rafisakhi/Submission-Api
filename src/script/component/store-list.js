@@ -1,6 +1,6 @@
-import "./club-item.js";
+import "./store-item.js";
 
-class ClubList extends HTMLElement {
+class StoreList extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({ mode: "open" });
@@ -30,7 +30,7 @@ class ClubList extends HTMLElement {
   render() {
     this.innerHTML = "";
     this._clubs.forEach((club) => {
-      const clubItemElement = document.createElement("club-item");
+      const clubItemElement = document.createElement("store-item");
       clubItemElement.club = club;
 
       this.shadowDOM.appendChild(clubItemElement);
@@ -38,4 +38,4 @@ class ClubList extends HTMLElement {
   }
 }
 
-customElements.define("club-list", ClubList);
+customElements.define("store-list", StoreList);

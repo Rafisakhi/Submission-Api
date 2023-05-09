@@ -1,4 +1,4 @@
-class ClubItem extends HTMLElement {
+class StoreItem extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({ mode: "open" });
@@ -30,10 +30,10 @@ class ClubItem extends HTMLElement {
             height: 200px;
             display: block;
             object-fit: fill;
-            margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
         }
+
         .desc {
             padding: 10px;
             margin: 20px;
@@ -79,19 +79,21 @@ class ClubItem extends HTMLElement {
             background-color: #243763;
             color: white;
         }
+
+       
       
       </style>
 
       <div class="cards">
       <div class="card">
-          <img src="${this._club.image}" alt="" />
+          <img src="${this._club.image}"  alt="" />
           <div class="desc">
             <h1>${this._club.title}</h1>
             <div class="oke">
               <p>${this._club.description}</p>
             </div>
             <h4>${this._club.price}</h4>
-            <button>Detail</button>
+
           </div>
         </div>
       </div>
@@ -99,4 +101,4 @@ class ClubItem extends HTMLElement {
   }
 }
 
-customElements.define("club-item", ClubItem);
+customElements.define("store-item", StoreItem);

@@ -23,6 +23,24 @@ class JudulStore extends HTMLElement {
             font-family: 'Poppins', 'sans-serif';
             font-weight: 400;
         }
+        @media screen and (max-width: 550px) {
+           .judul1 {
+                text-align: center;
+                margin:20px;
+            }
+
+            .judul1>h1 {
+                font-size: 45px;
+                font-family: 'Poppins', 'sans-serif';
+                font-weight: 700;
+            }
+
+            .judul1>p {
+                font-size: 15px;
+                font-family: 'Poppins', 'sans-serif';
+                font-weight: 400;
+            }
+        }
         </style>
 
         <div class="judul">

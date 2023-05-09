@@ -12,7 +12,6 @@ body {
 
 main {
   width: 100%;
-  margin: 32px;
 }
 
 judul-store {
@@ -21,10 +20,9 @@ judul-store {
   justify-content: center;
 }
 
-club-list {
+store-list {
   display: flex;
-  margin-top: 32px;
-  width: 100%;
-  max-width: 800px;
+  margin-left: 5px;
   padding: 16px;
+  flex-wrap: wrap;
 }

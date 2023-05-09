@@ -1,5 +1,5 @@
 class DataSource {
-  static searchClub() {
+  static getStore() {
     return fetch(`https://fakestoreapi.com/products`)
       .then((response) => {
         return response.json();

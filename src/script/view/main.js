@@ -1,19 +1,19 @@
-import "../component/club-list.js";
+import "../component/store-list.js";
 import DataSource from "../data/data-source.js";
 
 const main = async () => {
-  const clubListElement = document.querySelector("club-list");
+  const storeListElement = document.querySelector("store-list");
 
   const renderResult = (results) => {
-    clubListElement.clubs = results;
+    storeListElement.clubs = results;
   };
 
   const fallbackResult = (message) => {
-    clubListElement.renderError(message);
+    storeListElement.renderError(message);
   };
 
   try {
-    const result = await DataSource.searchClub();
+    const result = await DataSource.getStore();
     renderResult(result);
   } catch (message) {
     fallbackResult(message);
